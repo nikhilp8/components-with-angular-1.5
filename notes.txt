@@ -1,0 +1,10 @@
+Instead of using templates and controllers, we can build an application using components implementing those features. 
+And also use components instead of directives
+And component based router ( which is more powerful than original router)
+And different compositional patterns
+
+This application is to identify that component based approach is the best way to program with Angular.
+
+We can use controllers & directives to achieve the same goal, but which one is better? Controllers are easy to implement but not as powerful as directives. With directives we can create custom HTML elements.
+Components combines easy programming model of controllers & powerful feature of directives(custom HTML elements)
+
