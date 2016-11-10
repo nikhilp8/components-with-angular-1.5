@@ -8,3 +8,12 @@ This application is to identify that component based approach is the best way to
 We can use controllers & directives to achieve the same goal, but which one is better? Controllers are easy to implement but not as powerful as directives. With directives we can create custom HTML elements.
 Components combines easy programming model of controllers & powerful feature of directives(custom HTML elements)
 
+New lifecycle hacks introduced for both controllers & component controllers in 1.5.
+$onInit	// initiates a function execution in a component controller by default
+$onDestroy	//
+$onChanges
+$postLink
+
+components provide higher level of abstraction, but not as powerful as directives.In directives we have to choose between element, attribute or both & should choose between isolated or inherited scope.
+
+In components it makes a choice for us by selecting isolated scope by default.

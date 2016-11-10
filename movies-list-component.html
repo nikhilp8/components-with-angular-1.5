@@ -1,10 +1,33 @@
 <div>
   <h3>Hello from templateURL of the component</h3>
-  {{model.message}}
-  
-  <div>
-    <input type="text" ng-model="model.msg">
-    <button ng-click="model.change()">change message</button>
-  </div>
-  {{model.msg}}
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>duration</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in model.movies">
+        <td>{{x.id}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.rating}}</td>
+        <td>{{x.length}}</td>
+        <td>
+          <div class="btn-group">
+            <button class="btn btn-default" ng-click="model.upRating(x)">
+              <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <button class="btn btn-default" ng-click="model.downRating(x)">
+              <span class="glyphicon glyphicon-minus"></span>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
