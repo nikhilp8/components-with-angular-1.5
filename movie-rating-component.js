@@ -3,7 +3,7 @@
 
   module.component("movieRating", {
     templateUrl: "movie-rating-component.html",
-
+    transclude: true,
     bindings: {
       value: "<"
     },

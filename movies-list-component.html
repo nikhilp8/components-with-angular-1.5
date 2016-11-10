@@ -16,7 +16,9 @@
         <td>{{x.id}}</td>
         <td>{{x.name}}</td>
         <td>{{x.length}}</td>
-        <td><movie-rating value="x.rating"></movie-rating></td>
+        <td><movie-rating value="x.rating">
+          <span class="glyphicon glyphicon-star"></span>
+        </movie-rating></td>
         <td>
           <div class="btn-group">
             <button class="btn btn-default" ng-click="model.upRating(x)">

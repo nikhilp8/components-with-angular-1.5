@@ -1,5 +1,7 @@
 <div>
   <span ng-repeat="x in model.entries track by $index">
-    *
+    <ng-transclude>
+      *
+    </ng-transclude>
   </span>
 </div>
