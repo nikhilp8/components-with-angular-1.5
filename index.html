@@ -2,14 +2,12 @@
 <html ng-app="favMoviesList">
 
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-
-  <script src="module.js">
-  </script>
+  <script src="https://code.angularjs.org/1.5.3/angular-route.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <script src="module.js"></script>
   <script src="movies-list-component.js"></script>
   <script src="movie-rating-component.js"></script>
-
 </head>
 
 <body>
@@ -18,11 +16,17 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">New Movies</a>
       </div>
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a href="#/list">List</a>
+        </li>
+        <li>
+          <a href="#/about">About</a>
+        </li>
+      </ul>
     </div>
   </nav>
-
-  <movies-list></movies-list>
-
+  <ng-view></ng-view>
 </body>
 
 </html>
