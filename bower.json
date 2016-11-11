@@ -1,0 +1,21 @@
+{
+  "name": "components-with-angular-1.5",
+  "homepage": "https://github.com/ponugon/components-with-angular-1.5",
+  "authors": [
+    "nikhil.ponugoti <nikhil.ponugoti@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-component-router": "^0.2.1",
+    "angular": "1.5.3"
+  }
+}

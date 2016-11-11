@@ -3,30 +3,22 @@
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  <script src="https://code.angularjs.org/1.5.3/angular-route.js"></script>
+<script src="bower_components/angular-component-router/angular_1_router.js"></script>
+<!-- <script src="https://unpkg.com/@angular/router@0.2.0/angular1/angular_1_router.js"></script> -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
   <script src="module.js"></script>
   <script src="movies-list-component.js"></script>
   <script src="movie-rating-component.js"></script>
+  <script src="movie-app-component.js"></script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">New Movies</a>
-      </div>
-      <ul class="nav navbar-nav navbar-left">
-        <li>
-          <a href="#/list">List</a>
-        </li>
-        <li>
-          <a href="#/about">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <ng-view></ng-view>
+
+  <movie-app></movie-app>
+  
+  
 </body>
 
 </html>
