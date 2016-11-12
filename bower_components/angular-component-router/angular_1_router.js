@@ -187,7 +187,7 @@ function routerTriggerDirective($q) {
             var outlet = ngOutletCtrl.$$outlet;
             var currentComponent = outlet.currentController =
                 element.controller(ngOutletCtrl.$$componentName);
-            if (currentComponent.$routerOnActivate) {
+            if (currentComponent && currentComponent.$routerOnActivate) {
                 promise = $q.when(currentComponent.$routerOnActivate(outlet.currentInstruction, outlet.previousInstruction));
             }
             promise.then(outlet.deferredActivation.resolve, outlet.deferredActivation.reject);
