@@ -20,14 +20,17 @@
           <span class="glyphicon glyphicon-star"></span>
         </movie-rating></td>
         <td>
-          <div class="btn-group">
+          
             <button class="btn btn-default" ng-click="model.upRating(x)">
               <span class="glyphicon glyphicon-plus"></span>
             </button>
             <button class="btn btn-default" ng-click="model.downRating(x)">
               <span class="glyphicon glyphicon-minus"></span>
             </button>
-          </div>
+            <a ng-link="['Details',{id:model.id}]" class="btn btn-default">
+            	<span class="glyphicon glyphicon-zoom-in"></span>
+            </a>
+          
         </td>
       </tr>
     </tbody>
